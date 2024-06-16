@@ -17,18 +17,18 @@ import requests
 from bs4 import BeautifulSoup
 
 # 账户信息：用户名和密码
-USERNAME = '改为你的EUserV客户ID 或 邮箱'  # 填写用户名或邮箱
-PASSWORD = '改为你的EUserV的密码'  # 填写密码
+USERNAME = os.environ["USERNAME"] # 填写用户名或邮箱
+PASSWORD = os.environ["PASSWORD"]  # 填写密码
 
 # TrueCaptcha API 配置
 # 申请地址: https://truecaptcha.org/
 
-TRUECAPTCHA_USERID = '改为你的TrueCaptcha UserID'
-TRUECAPTCHA_APIKEY = '改为你的TrueCaptcha APIKEY'
+TRUECAPTCHA_USERID = os.environ["Cap_USERID"]  # 填写 TrueCaptcha 用户ID
+TRUECAPTCHA_APIKEY = os.environ["Cap_APIKEY"]  # 填写 TrueCaptcha APIKEY
 
 # Mailparser 配置
-MAILPARSER_DOWNLOAD_URL_ID = '改为你的Mailparser下载URL的最后几位' # 填写Mailparser的下载URL_ID
-MAILPARSER_DOWNLOAD_BASE_URL = "https://files.mailparser.io/d/" # 无需更改除非你要反代
+MAILPARSER_DOWNLOAD_URL_ID =  os.environ["MAILPARSER_DOWNLOAD_URL_ID"]     # 填写Mailparser的下载URL_ID
+MAILPARSER_DOWNLOAD_BASE_URL = "https://files.mailparser.io/d/"            # 无需更改除非你要反代
 
 # Telegram Bot 推送配置
 TG_BOT_TOKEN = "改为你的Telegram机器人Token"
