@@ -9,6 +9,7 @@ euserv 自动续期脚本
 * 日志信息格式化
 """
 
+import os
 import re
 import json
 import time
