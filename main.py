@@ -32,8 +32,8 @@ MAILPARSER_DOWNLOAD_URL_ID =  os.environ["MAILPARSER_DOWNLOAD_URL_ID"]     # 填
 MAILPARSER_DOWNLOAD_BASE_URL = "https://files.mailparser.io/d/"            # 无需更改除非你要反代
 
 # Telegram Bot 推送配置
-TG_BOT_TOKEN = "改为你的Telegram机器人Token"
-TG_USER_ID = "改为你的用户ID" # 用户机器人向你发送消息
+TG_BOT_TOKEN = os.environ["JC_TG_BOT_TOKEN"] 
+TG_USER_ID = os.environ["JC_TG_USER_ID"] 
 TG_API_HOST = "https://api.telegram.org"
 
 # 代理设置（如果需要）
