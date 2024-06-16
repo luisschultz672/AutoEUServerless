@@ -190,6 +190,7 @@ def get_pin_from_mailparser(url_id: str) -> str:
         f"{MAILPARSER_DOWNLOAD_BASE_URL}{url_id}",
     )
     pin = response.json()[0]["pin"]
+    log("[AutoEUServerless] 获取的PIN码：".format(pin))
     return pin
 
 # 登录函数
